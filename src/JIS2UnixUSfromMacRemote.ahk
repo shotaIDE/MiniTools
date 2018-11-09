@@ -66,7 +66,9 @@
 <!y::Send,^{y}
 <!z::Send,^{z}
 <!.::Send,^{.}
+<!/::Send,^{/}
 
+<!+i::Send,^+{i}
 <!+n::Send,^+{n}
 <!+p::Send,^+{p}
 <!+t::Send,^+{t}
