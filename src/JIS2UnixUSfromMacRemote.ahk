@@ -67,6 +67,10 @@
 <!z::Send,^{z}
 <!.::Send,^{.}
 
+<!+n::Send,^+{n}
+<!+p::Send,^+{p}
+<!+t::Send,^+{t}
+
 ; 修飾キー
 <!Enter::Send,^{Enter}
 <!Down::Send,^{Down}
