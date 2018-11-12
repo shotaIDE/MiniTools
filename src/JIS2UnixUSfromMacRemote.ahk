@@ -32,6 +32,7 @@
 <^k::Send,+{End}{Del}     ; 左Ctrl + k -> カーソルから行末まで削除
 
 ; 入力ソース切替
+<^Space::Send,{vkF3sc029} ; 左Crtl + Space -> 全角半角切り替え
 <!Space::Send,{vkF3sc029} ; 左Option + Space -> 全角半角切り替え
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
