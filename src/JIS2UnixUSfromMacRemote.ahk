@@ -33,55 +33,52 @@
 
 ; 入力ソース切替
 <^Space::Send,{vkF3sc029} ; 左Crtl + Space -> 全角半角切り替え
-<!Space::Send,{vkF3sc029} ; 左Option + Space -> 全角半角切り替え
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; OptionキーをCtrlに変換
+; WindowsキーをCtrlに変換
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; キー
-<!a::Send,^{a}
-<!b::Send,^{b}
-<!c::Send,^{c}
-<!d::Send,^{d}
-<!e::Send,^{e}
-<!f::Send,^{f}
-<!g::Send,^{g}
-<!h::Send,^{h}
-<!i::Send,^{i}
-<!j::Send,^{j}
-<!k::Send,^{k}
-<!l::Send,^{l}
-<!m::Send,^{m}
-<!n::Send,^{n}
-<!o::Send,^{o}
-<!p::Send,^{p}
-<!q::Send,^{q}
-<!r::Send,^{r}
-<!s::Send,^{s}
-<!t::Send,^{t}
-<!u::Send,^{u}
-<!v::Send,^{v}
-<!w::Send,^{w}
-<!x::Send,^{x}
-<!y::Send,^{y}
-<!z::Send,^{z}
-<!.::Send,^{.}
-<!/::Send,^{/}
+>#a::Send,^{a}
+>#b::Send,^{b}
+>#c::Send,^{c}
+>#d::Send,^{d}
+>#e::Send,^{e}
+>#f::Send,^{f}
+>#g::Send,^{g}
+>#h::Send,^{h}
+>#i::Send,^{i}
+>#j::Send,^{j}
+>#k::Send,^{k}
+>#l::Send,^{l}
+>#m::Send,^{m}
+>#n::Send,^{n}
+>#o::Send,^{o}
+>#p::Send,^{p}
+>#q::Send,^{q}
+>#r::Send,^{r}
+>#s::Send,^{s}
+>#t::Send,^{t}
+>#u::Send,^{u}
+>#v::Send,^{v}
+>#w::Send,^{w}
+>#x::Send,^{x}
+>#y::Send,^{y}
+>#z::Send,^{z}
+>#.::Send,^{.}
+>#/::Send,^{/}
 
-<!+f::Send,^+{f}
-<!+i::Send,^+{i}
-<!+n::Send,^+{n}
-<!+p::Send,^+{p}
-<!+t::Send,^+{t}
+>#+f::Send,^+{f}
+>#+i::Send,^+{i}
+>#+n::Send,^+{n}
+>#+p::Send,^+{p}
+>#+t::Send,^+{t}
 
-; 修飾キー
-<!Enter::Send,^{Enter}
-<!Down::Send,^{Down}
-<!Up::Send,^{Up}
-<!Left::Send,^{Left}
-<!Right::Send,^{Right}
-<!Home::Send,^{Home}
-<!End::Send,^{End}
-<!PgUp::Send,^{PgUp}
-<!PgDn::Send,^{PgDn}
+>#Enter::Send,^{Enter}
+>#Down::Send,^{Down}
+>#Up::Send,^{Up}
+>#Left::Send,^{Left}
+>#Right::Send,^{Right}
+>#Home::Send,^{Home}
+>#End::Send,^{End}
+>#PgUp::Send,^{PgUp}
+>#PgDn::Send,^{PgDn}
