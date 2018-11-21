@@ -82,3 +82,10 @@
 >#End::Send,^{End}
 >#PgUp::Send,^{PgUp}
 >#PgDn::Send,^{PgDn}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; その他
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+#!NumpadSub::Send,{PrintScreen}  ; Win + Alt + テンキー「-」 -> PrintScreen
+#!NumpadAdd::Send,!{PrintScreen} ; Win + Alt + テンキー「+」 -> Alt + PrintScreen
