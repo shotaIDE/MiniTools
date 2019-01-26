@@ -1,0 +1,274 @@
+{
+    "title": "JISキーボードの配列をUSキーボードの配列にする",
+    "rules": [
+        {
+            "description": "記号をUSキーボードの配列に置き換え",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "2",
+                        "modifiers": {
+                            "mandatory": ["shift"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "open_bracket"
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "6",
+                        "modifiers": {
+                            "mandatory": ["shift"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "equal_sign"
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "7",
+                        "modifiers": {
+                            "mandatory": ["shift"]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "6",
+                        "modifiers": ["shift"]
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "8",
+                        "modifiers": {
+                            "mandatory": ["shift"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "quote",
+                        "modifiers": ["shift"]
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "8",
+                        "modifiers": {
+                            "mandatory": ["shift"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "quote",
+                        "modifiers": ["shift"]
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "9",
+                        "modifiers": {
+                            "mandatory": ["shift"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "8",
+                        "modifiers": ["shift"]
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "0",
+                        "modifiers": {
+                            "mandatory": ["shift"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "9",
+                        "modifiers": ["shift"]
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "hyphen",
+                        "modifiers": {
+                            "mandatory": ["shift"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "international1"
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "equal_sign"
+                    },
+                    "to": [{
+                        "key_code": "hyphen",
+                        "modifiers": ["shift"]
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "equal_sign",
+                        "modifiers": {
+                            "mandatory": ["shift"]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "semicolon",
+                        "modifiers": ["shift"]
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "international3"
+                    },
+                    "to": [{
+                        "key_code": "open_bracket",
+                        "modifiers": ["shift"]
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "international3",
+                        "modifiers": {
+                            "mandatory": ["shift"]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "equal_sign",
+                        "modifiers": ["shift"]
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "open_bracket"
+                    },
+                    "to": [{
+                        "key_code": "close_bracket"
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "close_bracket"
+                    },
+                    "to": [{
+                        "key_code": "non_us_pound"
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "open_bracket",
+                        "modifiers": {
+                            "mandatory": ["shift"]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "close_bracket",
+                        "modifiers": ["shift"]
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "open_bracket"
+                    },
+                    "to": [{
+                        "key_code": "close_bracket"
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "close_bracket",
+                        "modifiers": {
+                            "mandatory": ["shift"]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "non_us_pound",
+                        "modifiers": ["shift"]
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "semicolon",
+                        "modifiers": {
+                            "mandatory": ["shift"]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "quote"
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "quote"
+                    },
+                    "to": [{
+                        "key_code": "7",
+                        "modifiers": ["shift"]
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "quote",
+                        "modifiers": {
+                            "mandatory": ["shift"]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "2",
+                        "modifiers": ["shift"]
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "non_us_pound"
+                    },
+                    "to": [{
+                        "key_code": "international3"
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "non_us_pound",
+                        "modifiers": {
+                            "mandatory": ["shift"]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "international3",
+                        "modifiers": ["shift"]
+                    }]
+                }
+            ]
+        }
+    ]
+}
