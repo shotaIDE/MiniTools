@@ -1,33 +1,29 @@
 #UseHook
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; Convert JIS keyboard -> US keyboard
+; 文字配列を JIS から US へ変換
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; 1st row
-; VKF4::Send,{``}  ;         半角/全角     -> `
-; +VKF4::Send,{~}  ; Shift + 半角/全角     -> ~
-+2::Send,{@}       ; Shift + 2         ["] -> @
-+6::Send,{^}       ; Shift + 6         [&] -> ^
-+7::Send,{&}       ; Shift + 7         ['] -> &
-+8::Send,{*}       ; Shift + 8         [(] -> *
-+9::Send,{(}       ; Shift + 9         [)] -> (
-+0::Send,{)}       ; Shift + 0         [ ] -> )
-+-::Send,{_}       ; Shift + -         [=] -> _
-^::Send,{=}        ;                   [^] -> =
-+^::Send,{+}       ; Shift + ^         [~] -> +
-\::Send,{``}       ;                   [\] -> `
-+\::Send,{~}       ; Shift + \         [|] -> ~
+; 1行目
++2::Send,{@}      ; Shift + 2         ["] -> @
++6::Send,{^}      ; Shift + 6         [&] -> ^
++7::Send,{&}      ; Shift + 7         ['] -> &
++8::Send,{*}      ; Shift + 8         [(] -> *
++9::Send,{(}      ; Shift + 9         [)] -> (
++0::Send,{)}      ; Shift + 0         [ ] -> )
++-::Send,{_}      ; Shift + -         [=] -> _
+^::Send,{=}       ;                   [^] -> =
++^::Send,{+}      ; Shift + ^         [~] -> +
+\::Send,{``}      ;                   [\] -> `
++\::Send,{~}      ; Shift + \         [|] -> ~
 
-; 2nd row
+; 2行目
 @::[              ;                   [@] -> [
 +@::{             ; Shift + @         [`] -> {
 [::]              ;                   [[] -> ]
 +[::Send,{}}      ; Shift + [         [{] -> }
-; ENTER::\
-; +ENTER::|
 
-; 3rd row
+; 3行目
 +;::Send,{:}      ; Shift + ;         [+] -> ;
 :::Send,{'}       ;                   [:] -> '
 *::Send,{"}       ; Shift + :         [*] -> "
@@ -36,10 +32,10 @@
 ; ]::ENTER        ;                   []] -> ENTER
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; Emacs key bind
+; Unix系エディタコマンド追加
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; Move
+; カーソル移動
 <^n::Send,{Down}    ; 左Ctrl + n -> Down
 <^+n::Send,+{Down}  ; Shift +    -> Shift + Down
 <^p::Send,{Up}      ; 左Ctrl + p -> Up
@@ -53,15 +49,16 @@
 <^e::Send,{End}     ; 左Ctrl + e -> End
 <^+e::Send,+{End}   ; Shift +    -> Shift + End
 
-; Edit
+; 削除
 <^h::Send,{BS}            ; 左Ctrl + h -> BackSpace
 <^d::Send,{Del}           ; 左Ctrl + d -> Delete
 ; <^m::Send,{Return}      ; 左Ctrl + m -> Enter
 <^k::Send,+{End}{Del}     ; 左Ctrl + k -> カーソルから行末まで削除
+
+; 入力ソース切替
 <^Space::Send,{vkF3sc029} ; 左Crtl + Space -> 全角半角切り替え
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; Other customize
+; キー無効化
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-Insert::Return         ; kill Insert key
-; NumLock::Send,{=}    ; NumLock -> [=]
+Insert::Return         ; Insert 無効化
