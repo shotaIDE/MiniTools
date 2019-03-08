@@ -253,7 +253,29 @@
                     },
                     "to": [{
                         "key_code": "international3"
-                    }]
+                    }],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [ "^com\\.microsoft\\.rdc\\.macos$" ]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "non_us_pound"
+                    },
+                    "to": [{
+                        "key_code": "international3",
+                        "modifiers": ["left_command"]
+                    }],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [ "^com\\.microsoft\\.rdc\\.macos$" ]
+                        }
+                    ]
                 },
                 {
                     "type": "basic",
