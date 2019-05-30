@@ -251,8 +251,37 @@
                     "from": {
                         "key_code": "non_us_pound"
                     },
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "^com\\.microsoft\\.rdc\\.macos$"
+                            ]
+                        }
+                    ],
                     "to": [{
                         "key_code": "international3"
+                    }]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "non_us_pound"
+                    },
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.microsoft\\.rdc\\.macos$"
+                            ]
+                        }
+                    ],
+                    "to": [{
+                        "key_code": "non_us_pound",
+                        "modifiers": [
+                            "shift",
+                            "control"
+                        ]
                     }]
                 },
                 {
