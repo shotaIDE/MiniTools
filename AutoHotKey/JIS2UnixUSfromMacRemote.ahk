@@ -70,9 +70,11 @@
 >#/::Send,^{/}
 
 >#+f::Send,^+{f}
+>#+h::Send,^+{h}
 >#+i::Send,^+{i}
 >#+n::Send,^+{n}
 >#+p::Send,^+{p}
+>#+r::Send,^+{r}
 >#+t::Send,^+{t}
 
 >#Enter::Send,^{Enter}
