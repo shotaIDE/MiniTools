@@ -260,7 +260,8 @@
                         }
                     ],
                     "to": [{
-                        "key_code": "international3"
+                        "key_code": "international3",
+                        "modifiers": ["left_gui"]
                     }]
                 },
                 {
